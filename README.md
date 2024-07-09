@@ -62,3 +62,26 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+## How to run locally
+
+This repo requires PHP >= 7.3 | 8.1.5.
+
+### Step To Run
+
+1. Clone this repository to your local run `git clone https://github.com/haykalm/backend-haykal-mustaghfiri.git`
+2. Edit your own config in `.env`, just copy `.env.example` and rename to `.env`.
+3. Edit conection database
+4. Run `composer install` or `composer update`
+5. Run `php artisan key:generate`.
+6. Run `php artisan migrate:fresh --seed`.
+7. Run `php artisan serve`.
+8. If you don't run the command `php artisan serve` anywhere, you can access `127.0.0.1:8000` to see application, and to testing Rest API you can access `127.0.0.1:8000/api/` list route in folder routes/api.php.
+
+- Login with:
+- `email`: `merchant@example.com`
+- `password`: `password`
+or
+- `email`: `customer@example.com`
+- `password`: `password`
